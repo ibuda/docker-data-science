@@ -1,0 +1,1 @@
+docker run -it --rm -p 8888:8888 -v /home/ivan/prb/sandbox:/home/jovyan/work my-data-science
