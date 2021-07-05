@@ -8,9 +8,9 @@ Docker template for data science projects
 3. Build the image using `make build`. This will create a docker image tagged `data-science` by default. To change a tag use `make build tag=another-tag`
 4. Run docker:
    ```shell
-   make run [path=a-working-dir-folder] [tag=another-tag]
+   make run [working_folder=a-working-dir-folder] [tag=another-tag]
    ```
-   `path` is optional parameter, default value is `prb`
+   `working_folder` is optional parameter, default value is `prb`
    `tag` is optional parameter, default value is `data-science`
 
 5.
