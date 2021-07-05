@@ -5,9 +5,15 @@ Docker template for data science projects
 ## Instructions on how to run docker
 
 1. Edit the `requirements.txt` file as needed for your environment.
-2. If you want a specific name for your docker image, edit the `build_image.sh` file and replace `my-data-science` with your desired name.
-3. Build the image using `./build_image.sh`. This will create a docker image tagged `my-data-science` by default. 
-4. Edit the `run_docker.sh` file to make the needed changes for your local machine.
+3. Build the image using `make build`. This will create a docker image tagged `data-science` by default. To change a tag use `make build tag=another-tag`
+4. Run docker:
+   ```shell
+   make run [path=a-working-dir-folder] [tag=another-tag]
+   ```
+   `path` is optional parameter, default value is `prb`
+   `tag` is optional parameter, default value is `data-science`
+
+5.
 ```bash
 docker run -it --rm -p 8888:8888 -v /home/ivan/prb/sandbox:/home/jovyan/work my-data-science
 ```
